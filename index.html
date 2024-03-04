@@ -31,7 +31,7 @@
 
         <div class="dish">Dishes for Non-Veg (Choose any 1)</div>
 
-        <div class="menu" id="lunchmenu-non" onclick="lunchnon()">
+        <div class="menu" id="lunchmenu-non" onclick="lunchNon()">
             <input type="checkbox" id="cmasala_lunch" name="cmasala">
             <label  for="cmasala_lunch">Chicken Masala</label>
 
@@ -61,7 +61,7 @@
                         <!-- Veg Dishes-->
         <div class="dish" style="margin-top:50px;">Dishes for Veg (Choose any 1)</div>
 
-        <div class="menu" id="lunchmenu-veg" onclick="lunchveg()">
+        <div class="menu" id="lunchmenu-veg" onclick="lunchVeg()">
             <input type="checkbox" id="vkolhapuri" name="vkolhapuri">
             <label for="vkolhapuri">Veg Kolhapuri</label>
 
@@ -136,7 +136,7 @@
                                 <!--Daal-->
         <div class="dish">Dal (Choose any 1)</div>
 
-        <div class="menu" id="lunchmenu-dal" onclick="lunchdal()">
+        <div class="menu" id="lunchmenu-dal" onclick="lunchDal()">
             <input type="checkbox" id="khadai_lunch" name="khadai">
             <label for="khadai_lunch">Khadai</label>
 
@@ -167,7 +167,7 @@
             <!--Rice-->
         <div class="dish">Rice (Choose any 1)</div>
 
-        <div class="menu" id="lunchmenu-rice" onclick="lunchrice()">
+        <div class="menu" id="lunchmenu-rice" onclick="lunchRice()">
             <input type="checkbox" id="jrice" name="jrice">
             <label for="jrice">Jeera Rice</label>
 
@@ -195,7 +195,7 @@
             <!--Bread-->
         <div class="dish">Bread (Choose any 1)</div>
 
-        <div class="menu" id="lunchmenu-bread" onclick="lunchbread()">
+        <div class="menu" id="lunchmenu-bread" onclick="lunchBread()">
             <input type="checkbox" id="naan" name="naan">
             <label for="naan">Naan</label>
 
@@ -290,7 +290,7 @@
 
         <div class="dish">Dishes for Veg (Choose any 1)</div>
 
-        <div class="menu" id="startermenu" onclick="extra()">
+        <div class="menu" id="startermenu-veg" onclick="startersVeg()">
             <input type="checkbox" id="pchilly" name="pchilly">
             <label for="pchilly">Paneer Chilly</label>
 
@@ -309,7 +309,7 @@
         
         <div class="dish">Dishes for Non-Veg (Choose any 1)</div>
         
-        <div class="menu" id="startermenu">
+        <div class="menu" id="startermenu-non" onclick="startersNon()">
             <input type="checkbox" id="cfry" name="cfry">
             <label for="cfry">Chicken Fry</label>
 
@@ -332,7 +332,7 @@
         <div class="dinner" id="dinnermenu" value="Dinner">Dinner</div>
         <div class="dish">Dishes for Non-Veg (Choose any 1)</div>
 
-        <div class="menu" id="dinnermenu-non" onclick="dinnernon()">
+        <div class="menu" id="dinnermenu-non" onclick="dinnerNon()">
             <input type="checkbox" id="cmasala_dine" name="cmasala_dine">
             <label for="cmasala_dine">Chicken Masala</label>
 
@@ -362,7 +362,7 @@
                         <!-- Veg Dishes-->
         <div class="dish" style="margin-top:50px;">Dishes for Veg (Choose any 1)</div>
 
-        <div class="menu" id="dinnermenu-veg" onclick="dinnerveg()">
+        <div class="menu" id="dinnermenu-veg" onclick="dinnerVeg()">
             <input type="checkbox" id="vkolhapuri_dine" name="vkolhapuri_dine">
             <label for="vkolhapuri_dine">Veg Kolhapuri</label>
 
@@ -437,7 +437,7 @@
                                 <!--Daal-->
         <div class="dish">Dal (Choose any 1)</div>
 
-        <div class="menu" id="dinnermenu-dal" onclick="dinnerdal()">
+        <div class="menu" id="dinnermenu-dal" onclick="dinnerDal()">
             <input type="checkbox" id="khadai_dine" name="khadai_dine">
             <label for="khadai_dine">Khadai</label>
 
@@ -468,7 +468,7 @@
             <!--Rice-->
         <div class="dish">Rice (Choose any 1)</div>
 
-        <div class="menu" id="dinnermenu-rice" onclick="dinnerrice()">
+        <div class="menu" id="dinnermenu-rice" onclick="dinnerRice()">
             <input type="checkbox" id="jrice_dine" name="jrice_dine">
             <label for="jrice_dine">Jeera Rice</label>
 
@@ -496,7 +496,7 @@
             <!--Bread-->
         <div class="dish" value="Bread">Bread (Choose any 1)</div>
 
-        <div class="menu" id="dinnermenu-bread" onclick="dinnerbread()">
+        <div class="menu" id="dinnermenu-bread" onclick="dinnerBread()">
             <input type="checkbox" id="naan_dine" name="naan_dine">
             <label for="naan_dine">Naan</label>
 
@@ -521,6 +521,12 @@
 
             <div class="txt2">Note:-Additional selection chargeable 150 per dish per person</div>
             <input type="text" placeholder="Suggestions or special requests can be made here" id="comments">
+
+            <div class="stackkup-logo">
+                <a href="https://www.instagram.com/stackkup14?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <img src="../images/StackkUp-logo-menu.png" width="100%" height="100%" />
+                </a>
+            </div>
 
                 <button type="button" id="whatsapp-btn" onclick="submitOrder()">Submit</button>
     </div>
