@@ -11,85 +11,159 @@ function shareOnWhatsApp(peopleCount, comments, menuIds, menuTitles, selectedIte
     window.location.href = whatsappUrl;
 }
 
-function lunchnon(){
-    let lunchMenuItems=document.querySelectorAll("#lunchmenu-non input:checked")
+function lunchNon(){
 
-    if (lunchMenuItems.length > 1){
-        alert("Extra Items chargeable")
+    if (!lunchNon.alertShown){
+        let lunchMenuItems=document.querySelectorAll("#lunchmenu-non input:checked");
+
+        if (lunchMenuItems.length > 1){
+            alert("Extra items chargeable")
+
+            lunchNon.alertShown=true;
+        }
     }
 }
 
-function lunchveg(){
-    let lunchMenuItems=document.querySelectorAll("#lunchmenu-veg input:checked")
+function lunchVeg(){
 
-    if (lunchMenuItems.length > 1){
-        alert("Extra items chargeable")
+    if (!lunchVeg.alertShown){
+        let lunchMenuItems=document.querySelectorAll("#lunchmenu-veg input:checked");
+
+        if (lunchMenuItems.length > 1){
+            alert("Extra items chargeable")
+
+            lunchVeg.alertShown=true;
+        }
     }
 }
 
-function lunchdal(){
-    let lunchMenuItems=document.querySelectorAll("#lunchmenu-dal input:checked");
+function lunchDal(){
 
-    if (lunchMenuItems.length > 1){
-        alert("Extra items chargeable")
+    if (!lunchDal.alertShown){
+        let lunchMenuItems=document.querySelectorAll("#lunchmenu-dal input:checked");
+
+        if (lunchMenuItems.length > 1){
+            alert("Extra items chargeable")
+
+            lunchDal.alertShown=true;
+        }
     }
 }
 
-function lunchrice(){
-    let lunchMenuItems=document.querySelectorAll("#lunchmenu-rice input:checked");
+function lunchRice(){
 
-    if (lunchMenuItems.length > 1){
-        alert("Extra items chargeable")
+    if (!lunchRice.alertShown){
+        let lunchMenuItems=document.querySelectorAll("#lunchmenu-rice input:checked");
+
+        if (lunchMenuItems.length > 1){
+            alert("Extra items chargeable")
+
+            lunchRice.alertShown=true;
+        }
     }
 }
 
-function lunchbread(){
-    let lunchMenuItems=document.querySelectorAll("#lunchmenu-bread input:checked");
+function lunchBread(){
 
-    if (lunchMenuItems.length > 1){
-        alert("Extra items chargeable")
+    if (!lunchBread.alertShown){
+        let lunchMenuItems=document.querySelectorAll("#lunchmenu-bread input:checked");
+
+        if (lunchMenuItems.length > 1){
+            alert("Extra items chargeable");
+
+            lunchBread.alertShown=true;
+        }
     }
 }
 
-//Dinner
+function startersVeg(){
 
-function dinnernon(){
-    let dinnerMenuItems=document.querySelectorAll("#dinnermenu-non input:checked")
+    if (!startersVeg.alertShown){
+        let starterMenuItems=document.querySelectorAll("#startermenu-veg input:checked");
 
-    if (dinnerMenuItems.length > 1){
-        alert("Extra Items chargeable")
+        if (starterMenuItems.length > 1){
+            alert("Extra items chargeable");
+
+            startersVeg.alertShown=true;
+        }
     }
 }
 
-function dinnerveg(){
-    let dinnerMenuItems=document.querySelectorAll("#dinnermenu-veg input:checked")
+function startersNon(){
 
-    if (dinnerMenuItems.length > 1){
-        alert("Extra items chargeable")
+    if (!startersNon.alertShown){
+        let starterMenuItems=document.querySelectorAll("#startermenu-non input:checked");
+
+        if (starterMenuItems.length > 1){
+            alert("Extra items chargeable");
+
+            startersNon.alertShown=true;
+        }
     }
 }
 
-function dinnerdal(){
-    let dinnerMenuItems=document.querySelectorAll("#dinnermenu-dal input:checked");
+function dinnerNon(){
 
-    if (dinnerMenuItems.length > 1){
-        alert("Extra items chargeable")
+    if (!dinnerNon.alertShown){
+        let dinnerMenuItems=document.querySelectorAll("#dinnermenu-non input:checked");
+
+        if (dinnerMenuItems.length > 1){
+            alert("Extra items chargeable");
+
+            dinnerNon.alertShown=true;
+        }
     }
 }
 
-function dinnerrice(){
-    let dinnerMenuItems=document.querySelectorAll("#dinnermenu-rice input:checked");
+function dinnerVeg(){
 
-    if (dinnerMenuItems.length > 1){
-        alert("Extra items chargeable")
+    if (!dinnerVeg.alertShown){
+        let dinnerMenuItems=document.querySelectorAll("#dinnermenu-veg input:checked");
+
+        if (dinnerMenuItems.length > 1){
+            alert("Extra items chargeable");
+
+            dinnerVeg.alertShown=true;
+        }
     }
 }
 
-function dinnerbread(){
-    let dinnerMenuItems=document.querySelectorAll("#dinnermenu-bread input:checked");
+function dinnerDal(){
 
-    if (dinnerMenuItems.length > 1){
-        alert("Extra items chargeable")
+    if (!dinnerDal.alertShown){
+        let dinnerMenuItems=document.querySelectorAll("#dinnermenu-dal input:checked");
+
+        if (dinnerMenuItems.length > 1){
+            alert("Extra items chargeable");
+
+            dinnerDal.alertShown=true;
+        }
+    }
+}
+
+function dinnerRice(){
+
+    if (!dinnerRice.alertShown){
+        let dinnerMenuItems=document.querySelectorAll("#dinnermenu-rice input:checked");
+
+        if (dinnerMenuItems.length > 1){
+            alert("Extra items chargeable");
+
+            dinnerRice.alertShown=true;
+        }
+    }
+}
+
+function dinnerBread(){
+
+    if (!dinnerBread.alertShown){
+        let dinnerMenuItems=document.querySelectorAll("#dinnermenu-bread input:checked");
+
+        if (dinnerMenuItems.length > 1){
+            alert("Extra items chargeable");
+
+            dinnerBread.alertShown=true;
+        }
     }
 }
 
@@ -113,9 +187,9 @@ function submitOrder() {
 
     let whatsappButton = document.getElementById("whatsapp-btn");
     if (whatsappButton) {
-        whatsappButton.onclick = function () {
+        whatsappButton.addEventListener("click", () => {
             shareOnWhatsApp(peopleCount, comments, menuIds, menuTitles, selectedItems);
-        };
+        });
     } else {
         console.error("Button with ID 'whatsapp-btn' not found.");
     }
