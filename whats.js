@@ -197,5 +197,9 @@ function submitOrder() {
 
 function getSelectedItems(selector) {
     let items = document.querySelectorAll(selector);
-    return Array.from(items).map(item => item.nextElementSibling.textContent);
+    return Array.from(items).map(item => {
+        let itemName = item.nextElementSibling.textContent;
+        // Add "(extra)" if there's more than one item selected
+        return (items.length > 1) ? `${itemName} (extra)` : itemName;
+    });
 }
