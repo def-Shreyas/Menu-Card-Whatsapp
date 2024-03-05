@@ -11,6 +11,18 @@ function shareOnWhatsApp(peopleCount, comments, menuIds, menuTitles, selectedIte
     window.location.href = whatsappUrl;
 }
 
+function lunchNon(){
+    if (!lunchNon.alertShown){
+        let lunchItems=document.querySelectorAll("#lunchmenu-non input:checked");
+
+        if (lunchItems.length > 1){
+            alert("Extra items chargeable")
+
+            lunchNon.alertShown=true;
+        }
+    }
+}
+
 function submitOrder() {
     let peopleCount = document.getElementById("people").value;
     let comments = document.getElementById("comments").value;
