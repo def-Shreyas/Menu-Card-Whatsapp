@@ -35,6 +35,18 @@ function lunchVeg(){
     }
 }
 
+function lunchDal(){
+    if (!lunchDal.alertShown){
+        let lunchItems = document.querySelectorAll("#lunchmenu-dal input:checked");
+
+        if (lunchItems.length > 1){
+            alert("Extra items chargeable");
+
+            lunchDal.alertShown = true;
+        }
+    }
+}
+
 function submitOrder() {
     let peopleCount = document.getElementById("people").value;
     let comments = document.getElementById("comments").value;
