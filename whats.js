@@ -43,4 +43,3 @@ function getSelectedItems(selector) {
     let items = document.querySelectorAll(selector);
     return Array.from(items).map(item => item.nextElementSibling.textContent);
 }
-
