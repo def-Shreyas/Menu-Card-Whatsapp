@@ -23,6 +23,18 @@ function lunchNon(){
     }
 }
 
+function lunchVeg(){
+    if (!lunchVeg.alertShown){
+        let lunchItems = document.querySelectorAll("#lulnchmenu-veg input:checked");
+
+        if (lunchItems.length > 1){
+            alert("Extra items chargeable")
+
+            lunchVeg,alertShown = true;
+        }
+    }
+}
+
 function submitOrder() {
     let peopleCount = document.getElementById("people").value;
     let comments = document.getElementById("comments").value;
