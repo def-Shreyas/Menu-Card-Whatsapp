@@ -11,41 +11,41 @@ function shareOnWhatsApp(peopleCount, comments, menuIds, menuTitles, selectedIte
     window.location.href = whatsappUrl;
 }
 
-function lunchNon(){
-    if (!lunchNon.alertShown){
-        let lunchItems=document.querySelectorAll("#lunchmenu-non input:checked");
+// function lunchNon(){
+//     if (!lunchNon.alertShown){
+//         let lunchItems=document.querySelectorAll("#lunchmenu-non input:checked");
 
-        if (lunchItems.length > 1){
-            alert("Extra items chargeable")
+//         if (lunchItems.length > 1){
+//             alert("Extra items chargeable")
 
-            lunchNon.alertShown=true;
-        }
-    }
-}
+//             lunchNon.alertShown=true;
+//         }
+//     }
+// }
 
-function lunchVeg(){
-    if (!lunchVeg.alertShown){
-        let lunchItems = document.querySelectorAll("#lulnchmenu-veg input:checked");
+// function lunchVeg(){
+//     if (!lunchVeg.alertShown){
+//         let lunchItems = document.querySelectorAll("#lulnchmenu-veg input:checked");
 
-        if (lunchItems.length > 1){
-            alert("Extra items chargeable")
+//         if (lunchItems.length > 1){
+//             alert("Extra items chargeable")
 
-            lunchVeg,alertShown = true;
-        }
-    }
-}
+//             lunchVeg,alertShown = true;
+//         }
+//     }
+// }
 
-function lunchDal(){
-    if (!lunchDal.alertShown){
-        let lunchItems = document.querySelectorAll("#lunchmenu-dal input:checked");
+// function lunchDal(){
+//     if (!lunchDal.alertShown){
+//         let lunchItems = document.querySelectorAll("#lunchmenu-dal input:checked");
 
-        if (lunchItems.length > 1){
-            alert("Extra items chargeable");
+//         if (lunchItems.length > 1){
+//             alert("Extra items chargeable");
 
-            lunchDal.alertShown = true;
-        }
-    }
-}
+//             lunchDal.alertShown = true;
+//         }
+//     }
+// }
 
 function submitOrder() {
     let peopleCount = document.getElementById("people").value;
