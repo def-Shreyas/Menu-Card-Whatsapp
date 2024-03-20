@@ -46,6 +46,17 @@ function shareOnWhatsApp(peopleCount, comments, menuIds, menuTitles, selectedIte
 //         }
 //     }
 // }
+function dinnerBread(){
+    if(!dinnerBread.alertShown){
+        let dinnerMenuItem=document.querySelectorAll("#dinnermenu-bread input:ch")
+
+        if(dinnerMenuItem.length>1){
+            alert("Extra items chargeable");
+
+            dinnerBread.alertShown=true;
+        }
+    }
+}
 
 function submitOrder() {
     let peopleCount = document.getElementById("people").value;
