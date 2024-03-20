@@ -48,7 +48,7 @@ function shareOnWhatsApp(peopleCount, comments, menuIds, menuTitles, selectedIte
 // }
 function dinnerBread(){
     if(!dinnerBread.alertShown){
-        let dinnerMenuItem=document.querySelectorAll("#dinnermenu-bread input:ch")
+        let dinnerMenuItem=document.querySelectorAll("#dinnermenu-bread input:checked");
 
         if(dinnerMenuItem.length>1){
             alert("Extra items chargeable");
