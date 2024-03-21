@@ -10,54 +10,6 @@ function shareOnWhatsApp(peopleCount, comments, menuIds, menuTitles, selectedIte
     let whatsappUrl = "whatsapp://send?text=" + encodeURIComponent(content);
     window.location.href = whatsappUrl;
 }
-
-// function lunchNon(){
-//     if (!lunchNon.alertShown){
-//         let lunchItems=document.querySelectorAll("#lunchmenu-non input:checked");
-
-//         if (lunchItems.length > 1){
-//             alert("Extra items chargeable")
-
-//             lunchNon.alertShown=true;
-//         }
-//     }
-// }
-
-// function lunchVeg(){
-//     if (!lunchVeg.alertShown){
-//         let lunchItems = document.querySelectorAll("#lulnchmenu-veg input:checked");
-
-//         if (lunchItems.length > 1){
-//             alert("Extra items chargeable")
-
-//             lunchVeg,alertShown = true;
-//         }
-//     }
-// }
-
-// function lunchDal(){
-//     if (!lunchDal.alertShown){
-//         let lunchItems = document.querySelectorAll("#lunchmenu-dal input:checked");
-
-//         if (lunchItems.length > 1){
-//             alert("Extra items chargeable");
-
-//             lunchDal.alertShown = true;
-//         }
-//     }
-// }
-function dinnerBread(){
-    if(!dinnerBread.alertShown){
-        let dinnerMenuItem=document.querySelectorAll("#dinnermenu-bread input:checked");
-
-        if(dinnerMenuItem.length>1){
-            alert("Extra items chargeable");
-
-            dinnerBread.alertShown=true;
-        }
-    }
-}
-
 function submitOrder() {
     let peopleCount = document.getElementById("people").value;
     let comments = document.getElementById("comments").value;
