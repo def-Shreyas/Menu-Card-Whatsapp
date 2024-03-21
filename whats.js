@@ -10,6 +10,7 @@ function shareOnWhatsApp(peopleCount, comments, menuIds, menuTitles, selectedIte
     let whatsappUrl = "whatsapp://send?text=" + encodeURIComponent(content);
     window.location.href = whatsappUrl;
 }
+
 function submitOrder() {
     let peopleCount = document.getElementById("people").value;
     let comments = document.getElementById("comments").value;
