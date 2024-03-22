@@ -1,17 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="4k_display.css">
     <link rel="stylesheet" href="laptop_large.css">
     <link rel="stylesheet" href="laptop.css">
     <link rel="stylesheet" href="tablet.css">
     <link rel="stylesheet" href="mobile_large.css">
-    <link rel="stylesheet" href="mobile-medium.css">
-    <link rel="stylesheet" href="mobile-small.css">
 
 </head>
 <body>
@@ -60,7 +57,7 @@
 
                         <!-- Veg Dishes-->
         <div class="dish" style="margin-top:50px;">Dishes for Veg (Choose any 1)</div>
-
+<!-- edited id,onclick -->
         <div class="menu" id="lunchmenu">
             <input type="checkbox" id="vkolhapuri" name="vkolhapuri">
             <label for="vkolhapuri">Veg Kolhapuri</label>
@@ -135,7 +132,7 @@
 
                                 <!--Daal-->
         <div class="dish">Dal (Choose any 1)</div>
-
+<!-- edited id -->
         <div class="menu" id="lunchmenu">
             <input type="checkbox" id="khadai_lunch" name="khadai">
             <label for="khadai_lunch">Khadai</label>
@@ -166,7 +163,7 @@
 
             <!--Rice-->
         <div class="dish">Rice (Choose any 1)</div>
-
+<!-- edited id -->
         <div class="menu" id="lunchmenu">
             <input type="checkbox" id="jrice" name="jrice">
             <label for="jrice">Jeera Rice</label>
@@ -235,7 +232,8 @@
         </div>
 
                      <!--Evening Snacks-->
-        <div class="snacks" id="evening">Evening Snacks</div>
+            <!--edited class  -->
+        <div class="evening" id="evening">Evening Snacks</div>
 
         <div class="dish">Hi Tea (Choose any 2)</div>
 
@@ -266,10 +264,10 @@
         </div>
 
         <div class="txt2">Note:-Additional selection chargeable 50 per dish per person</div>
-
+<!-- -->
         <div class="dish" id="hightea">Drinks</div>
 
-        <div class="menu" id="teamenu">
+        <div class="menu" id="highteamenu">
             <input type="checkbox" id="tea" name="tea">
             <label for="tea">Tea</label>
 
@@ -290,7 +288,7 @@
 
         <div class="dish">Dishes for Veg (Choose any 1)</div>
 
-        <div class="menu" id="startermenu">
+        <div class="menu" id="startersmenu">
             <input type="checkbox" id="pchilly" name="pchilly">
             <label for="pchilly">Paneer Chilly</label>
 
@@ -309,7 +307,7 @@
         
         <div class="dish">Dishes for Non-Veg (Choose any 1)</div>
         
-        <div class="menu" id="startermenu">
+        <div class="menu" id="startersmenu">
             <input type="checkbox" id="cfry" name="cfry">
             <label for="cfry">Chicken Fry</label>
 
@@ -494,7 +492,7 @@
             <div class="txt2">Note:-Additional selection chargeable 150 per dish per person</div>
 
             <!--Bread-->
-        <div class="dish" value="Bread">Bread (Choose any 1)</div>
+        <div class="dish"  value="Bread">Bread (Choose any 1)</div>
 
         <div class="menu" id="dinnermenu">
             <input type="checkbox" id="naan_dine" name="naan_dine">
@@ -520,6 +518,7 @@
         </div>
 
             <div class="txt2">Note:-Additional selection chargeable 150 per dish per person</div>
+
             <input type="text" placeholder="Suggestions or special requests can be made here" id="comments">
 
                 <button type="button" id="whatsapp-btn" onclick="submitOrder()">Submit</button>
