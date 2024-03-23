@@ -37,6 +37,8 @@ function submitOrder() {
     } else {
         console.error("Button with ID 'whatsapp-btn' not found.");
     }
+
+    alert("Extra items chargeable!!")
 }
 
 function getSelectedItems(selector) {
