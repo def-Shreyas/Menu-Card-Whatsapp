@@ -7,6 +7,8 @@ function shareOnWhatsApp(peopleCount, comments, menuIds, menuTitles, selectedIte
         content += `\n${menuTitles[index]}: \n${items.join('\n')}\n\n`;
     });
 
+    alert("Extra items chargeable!!");
+
     let whatsappUrl = "whatsapp://send?text=" + encodeURIComponent(content);
     window.location.href = whatsappUrl;
 }
